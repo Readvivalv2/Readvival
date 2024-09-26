@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Readvival Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #2E6BFF;
+            color: white;
+            font-weight: normal;
+        }
+
+        header {
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid #fff;
+            margin: 5px;
+        }
+
+        h4 {
+            margin: 10px 0;
+        }
+        
+        header h4 {
+            font-size: 25px;
+        }
+        
+        div {
+            display: flex;
+            align-items: center;          
+            overflow-x: scroll; /* Allow horizontal scrolling */
+            padding: 10px;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            gap: 20px; /* Space between items */
+        }
+
+        li {
+            flex: 0 0 auto; /* Prevent items from growing */
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+            border-radius: 10px;
+            padding: 10px;
+            width: 275px;
+            transition: transform 0.3s ease; /* Animation on hover */
+        }
+
+        li:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 7px;
+            margin-top: 5px;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: #2E6BFF;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f1f1f1; /* Change color on hover */
+        }     
+    </style>
+</head>
+<header>
+    <h4>Readvival</h4>
+    <p>Your Companion to Enhance Reading Comprehension</p>
+</header>
+<body>
+    <div>
+        <ul>
+            <li><img src="Startimg.png" width="150"><h4>Home page</h4><p>Read books</p></li>
+            <li><img src="Startimg2.png" width="150"><h4>Search page</h4><p>Search what you want to read</p></li>
+            <li><img src="Startimg3.png" width="150"><h4>Library page</h4><p>Find Meaning With Example</p></li>
+            <li><img src="Startimg4.png" width="150"><h4>Notepad page</h4><p>List all Your objectives and what you have learned</p></li>
+            <li><img src="Startimg5.png" width="150"><h4>Quiz page</h4><p>Test your own Knowledge</p></li>
+        </ul>
+    </div>
+</body>
+<hr color="#fff">
+<footer>
+
+    <button id="Downloadbtn">Download</button>
+    <h4>@2024 Readvival</h4>
+    <p style="font-size: 10px;">By Macqui Politico</p>
+</footer>
+<script>
+    document.getElementById("Downloadbtn").addEventListener("click", () => {
+        window.location.assign("https://www.mediafire.com/file/x2nzeflxushyi2v/Readvival.apk/file");
+    });
+</script>
+</html>
